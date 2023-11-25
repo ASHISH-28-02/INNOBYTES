@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E ‘connect</title>
+    </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Mukta+Mahee&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <link rel="stylesheet" href="Service.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     
+
+    <body>
+        <div class="navbar">
+            <div class="title">
+                <span>E ‘connect</span>
+            </div>
+            <div class="checkbox">
+                <input type="radio" id="police" name="select" />
+                <label class="police" for="police">Plumber</label>
+                <input type="radio" id="medic" name="select"/>
+                <label class="medic" for="medic">Electrician</label>
+                <input type="radio" id="fireForce" name="select"/>
+                <label class="fireForce" for="fireForce">Gardener</label>
+            </div>
+        </div>
+        <div class="mapHolder">
+            <div id="map"></div>
+            <div class="details">
+                <div class="name"></div>
+                <div class="phone"></div>
+            </div>
+        </div>
+        <a href="../Homepage/Homepage.html"><button class="back">Back</button></a>
+    </body>
+    <script type="module" src="Service.js"></script>
+</html>

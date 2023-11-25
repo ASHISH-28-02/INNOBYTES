@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+}
+
+.title span{
+    font-family: Lily Script One;
+    margin-left: 50px;
+    font-size: xx-large;
+}
+.checkbox{
+    margin-left: 200px;
+}
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+}
+.checkbox label{
+    font-family: Mukta Mahee;
+    font-size: x-large;
+    padding: 5px 50px 5px 50px;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+.checkbox input:checked + label{
+    background-color: #FF8A00;
+    color: white;
+}
+.mapHolder{
+    position: relative;
+    border: 2px solid black;
+    height: 560px;
+    width: 95%;
+    border-radius: 20px;
+    margin: 0px 40px 0px 40px;
+    overflow: hidden;
+}
+#map{ 
+    height: 100%;
+    z-index: -1;
+}
+.details{
+    opacity: 0;
+    font-family: Mukta Mahee;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.back{
+    background-color: #FF8A00;
+    color: white;
+    border: none;
+    font-family: Mukta Mahee;
+    font-size: x-large;
+    padding: 5px 50px 5px 50px;
+    border-radius: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    cursor: pointer;
+}
+.request{
+    background-color: #FF8A00;
+    color: white;
+    border: none;
+    font-family: Mukta Mahee;
+    font-size: large;
+    padding: 5px 20px 5px 20px;
+    margin: 25px 25px 0px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
